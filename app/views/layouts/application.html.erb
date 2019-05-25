@@ -9,7 +9,39 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+
+
+<body>
+<div id="app">
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          Primary title
+        </h1>
+        <h2 class="subtitle">
+          Primary subtitle
+        </h2>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="main-content columns is-fullheight">
+
+    <%= render 'layouts/html_header' %>
     <%= yield %>
-  </body>
+
+  </section>
+
+  <footer class="footer is-hidden">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>Hello</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
 </html>
